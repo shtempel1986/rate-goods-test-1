@@ -33,15 +33,18 @@ $warm-grey: #898989
 .container
   width: 1440px
   padding: 0 20px
-.hidden
-  display: none
-main
-  position: relative
 //Для заголовка
 header
-  border: solid 1px $white
   margin: 0 auto 67px
-  width: 1920px
+  position: relative
+  &::after
+    content: ""
+    width: 2050px
+    position: absolute
+    bottom: 0
+    border-bottom: solid 1px $white
+    left: 50%
+    margin: 0 0 0 -958px
 .header
   display: flex
   height: 113px
@@ -54,7 +57,7 @@ header
   height: 62px
   display: flex
   align-items: center
-  margin: 0 0 0 -135px
+  margin: 0 0 0 -170px
 .header__icon
   display: inline-block
   width: 61px
@@ -88,7 +91,7 @@ header
       color: $charcoal-grey
 .actions
   font-size: 30px
-  margin: 0 -390px 0 0
+  margin: 0 -190px 0 0
   a
     color: $charcoal-grey
     margin: 20px

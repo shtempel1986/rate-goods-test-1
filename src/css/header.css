@@ -18,16 +18,17 @@
   width: 1440px;
   padding: 0 20px; }
 
-.hidden {
-  display: none; }
-
-main {
-  position: relative; }
-
 header {
-  border: solid 1px #e5e5e5;
   margin: 0 auto 67px;
-  width: 1920px; }
+  position: relative; }
+  header::after {
+    content: "";
+    width: 2050px;
+    position: absolute;
+    bottom: 0;
+    border-bottom: solid 1px #e5e5e5;
+    left: 50%;
+    margin: 0 0 0 -958px; }
 
 .header {
   display: -webkit-box;
@@ -57,7 +58,7 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 0 -135px; }
+  margin: 0 0 0 -170px; }
 
 .header__icon {
   display: inline-block;
@@ -98,7 +99,7 @@ header {
 
 .actions {
   font-size: 30px;
-  margin: 0 -390px 0 0; }
+  margin: 0 -190px 0 0; }
   .actions a {
     color: #38454f;
     margin: 20px; }
