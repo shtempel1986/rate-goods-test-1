@@ -50,8 +50,7 @@ header {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 0 -170px; }
+          align-items: center; }
 
 .header__icon {
   display: inline-block;
@@ -91,8 +90,7 @@ header {
       color: #38454f; }
 
 .actions {
-  font-size: 30px;
-  margin: 0 -190px 0 0; }
+  font-size: 30px; }
   .actions a {
     color: #38454f;
     margin: 20px; }
