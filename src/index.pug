@@ -7,30 +7,31 @@ html(lang="ru")
         link(rel="stylesheet" href="css/libs.min.css")
         link(rel="stylesheet" href="css/main.min.css")
     body
-        header.container.header
-            .header-logo
-                .header__icon
-                    .header__circle RG
-                .header__text Rate & Goods
-            nav.header-navbar
-                ul.header-nav.list-unstyled.list-inline
-                    li
-                        a(href="#").text-uppercase Журнал
-                    li
-                        a(href="#").text-uppercase блог
-                    li
-                        a(href="#").text-uppercase каталог
-                    li
-                        a(href="#").text-uppercase магазин
-            .actions
-                a(href="#").actions__search
-                    i.fa.fa-search
-                a(href="#").actions__bookmark
-                    i.fa.fa-bookmark-o
-                a(href="#").actions__profile
-                    i.fa.fa-user-o
-                a(href="#").actions__menu
-                    i.fa.fa-align-right
+        header
+            .header.container
+                .header-logo
+                    .header__icon
+                        .header__circle RG
+                    .header__text Rate & Goods
+                nav.header-navbar
+                    ul.header-nav.list-unstyled.list-inline
+                        li
+                            a(href="#").text-uppercase Журнал
+                        li
+                            a(href="#").text-uppercase блог
+                        li
+                            a(href="#").text-uppercase каталог
+                        li
+                            a(href="#").text-uppercase магазин
+                .actions
+                    a(href="#").actions__search
+                        i.fa.fa-search
+                    a(href="#").actions__bookmark
+                        i.fa.fa-bookmark-o
+                    a(href="#").actions__profile
+                        i.fa.fa-user-o
+                    a(href="#").actions__menu
+                        i.fa.fa-align-right
         main.container
             .product-summary
                 .gallery
@@ -69,7 +70,7 @@ html(lang="ru")
                             - for (var i = 0; i < 5; i++){
                                 i.fa.fa-star.rating.rating_active
                             - }
-                        .content__reviews-counts 170 оценок / 65 отзывов
+                        .content__reviews-counts.text-uppercase 170 оценок / 65 отзывов
                     .content-overview
                         .content-overview__price
                             .price.text-uppercase цена
